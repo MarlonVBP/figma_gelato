@@ -1,0 +1,91 @@
+    @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #FFD703;
+    --secondary-color: #C807B4;
+    --tetiaty-color: #0012B7;
+    --quatenary-color: #8205FF;
+    --quinary-color: #05C2EC;
+    --dark-color: #000000;
+    --light-color: #ffffff;
+    --grayscale-color: #eeeeee;
+}
+
+.left-side,
+.right-side{
+    /* altera 100% - vertical height */
+    height: 100vh;
+    /* ocutar a barra de rolagem */
+    overflow: hidden;
+}
+
+
+.left-side{
+    background: rgb(255,215,3);
+    background: linear-gradient(90deg, rgba(255,215,3,1) 5%, rgba(200,7,180,1) 80%);
+}
+
+.left-side__brand{
+
+}
+
+.right-side{
+    align-items: center;
+}
+
+.right-side__title{
+    width: 300px;
+    height: 191px;
+    
+    font-family: 'Sacramento', cursive;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 187px;
+    
+    color: #0012B7;
+}
+
+.right-side_form{
+    
+}
+
+.right-side__label{
+
+}
+
+.right-side__buttom{
+    border-radius: 50px;
+    background: blueviolet;
+    border: 1px rgb(119, 38, 196);
+    transition: all .4s;
+}
+
+.right-side__buttom:hover{
+    background: blueviolet;
+    border: 1px rgb(119, 38, 196);
+
+    transition: all .4s;
+}
+
+.right-side__input{
+    border-radius: 50px;
+    background: var(--grayscale-color);
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.301);
+}
+
+.right-side_remember-pass{
+    
+}
+
+@media (max-width: 720px){
+    .left-side, .right-side{
+        height:95vh;
+    }
+}
+
+
