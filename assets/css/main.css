@@ -1,93 +1,80 @@
     @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
-*{
+*
+{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-:root{
+:root
+{
     --primary-color: #FFD703;
     --secondary-color: #C807B4;
     --tetiaty-color: #0012B7;
-    --quatenary-color: #8205FF;
+    --quatenary-color: #7726c4;
     --quinary-color: #05C2EC;
     --dark-color: #000000;
     --light-color: #ffffff;
-    --grayscale-color: #eeeeee;
+    --grayscale-color: #6e6e6e;
 }
-
-.left-side,
-.right-side{
+.left-side,.right-side
+{
     /* altera 100% - vertical height */
     height: 100vh;
     /* ocutar a barra de rolagem */
     overflow: hidden;
 }
-
-
-.left-side{
-    background: #ffd703;
-    background: linear-gradient(90deg, #ffd703 5%, #c807b4 80%);
+.left-side
+{
+    background: var(--primary-color);
+    background: linear-gradient(90deg, var(--primary-color) 5%, var(--secondary-color) 80%);
 }
-
-.left-side__brand{
-
-}
-
-.right-side{
+/* .left-side__brand{} */
+.right-side
+{
     align-items: center;
     justify-content: center;
 }
-
-.right-side__title{
+.right-side__title
+{
     width: 300px;
     height: 191px;
-    
     font-family: 'Sacramento', cursive;
     font-weight: 400;
     font-size: 8em;
     line-height: 187px;
-    
-    color: #0012B7;
+    color: var(--tetiaty-color);
 }
-
-.right-side_form{
-}
-
-.right-side__label{
-
-}
-
-.right-side__buttom{
+/* .right-side_form{} */
+/* .right-side__label{} */
+.right-side__buttom
+{
     border-radius: 50px;
     font-weight: 500;
-    border: 1px solid #7726c4;
+    border: 1px solid var(--quatenary-color);
     transition: all .4s;
     width: 60%;
 }
-
-.right-side__buttom:hover{
-    border: 1px solid #7726c4;
+.right-side__buttom:hover
+{
+    border: 1px solid var(--quatenary-color);
     transition: all .4s;
     transform: scale(1.05);
-    background: white;
-    color: #6e6e6e
+    background: var(--light-color);
+    color: var(--grayscale-color)
 }
-
-.right-side__input{
+.right-side__input
+{
     border-radius: 50px;
 }
-
-.right-side__input:hover{
+.right-side__input:hover
+{
     transition: all .4s;
     transform: scale(1.05);
 }
-
-.right-side_remember-pass{
-    
-}
-
-@media (max-width: 720px){
+/* .right-side_remember-pass{} */
+@media (max-width: 720px)
+{
     .left-side{
         height:20vh;
     }
@@ -95,5 +82,3 @@
         height: 80vh;
     }
 }
-
-
