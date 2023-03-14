@@ -26,8 +26,8 @@
 
 
 .left-side{
-    background: rgb(255,215,3);
-    background: linear-gradient(90deg, rgba(255,215,3,1) 5%, rgba(200,7,180,1) 80%);
+    background: #ffd703;
+    background: linear-gradient(90deg, #ffd703 5%, #c807b4 80%);
 }
 
 .left-side__brand{
@@ -61,13 +61,13 @@
 .right-side__buttom{
     border-radius: 50px;
     font-weight: 500;
-    border: 2px solid rgb(119, 38, 196);
+    border: 1px solid #7726c4;
     transition: all .4s;
     width: 60%;
 }
 
 .right-side__buttom:hover{
-    border: 2px solid rgb(119, 38, 196);
+    border: 1px solid #7726c4;
     transition: all .4s;
     transform: scale(1.05);
     background: white;
