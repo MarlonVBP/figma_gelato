@@ -36,6 +36,7 @@
 
 .right-side{
     align-items: center;
+    justify-content: center;
 }
 
 .right-side__title{
@@ -44,14 +45,13 @@
     
     font-family: 'Sacramento', cursive;
     font-weight: 400;
-    font-size: 128px;
+    font-size: 8em;
     line-height: 187px;
     
     color: #0012B7;
 }
 
 .right-side_form{
-    
 }
 
 .right-side__label{
@@ -60,22 +60,27 @@
 
 .right-side__buttom{
     border-radius: 50px;
-    background: blueviolet;
-    border: 1px rgb(119, 38, 196);
+    font-weight: 500;
+    border: 2px solid rgb(119, 38, 196);
     transition: all .4s;
+    width: 60%;
 }
 
 .right-side__buttom:hover{
-    background: blueviolet;
-    border: 1px rgb(119, 38, 196);
-
+    border: 2px solid rgb(119, 38, 196);
     transition: all .4s;
+    transform: scale(1.05);
+    background: white;
+    color: #6e6e6e
 }
 
 .right-side__input{
     border-radius: 50px;
-    background: var(--grayscale-color);
-    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.301);
+}
+
+.right-side__input:hover{
+    transition: all .4s;
+    transform: scale(1.05);
 }
 
 .right-side_remember-pass{
@@ -83,8 +88,11 @@
 }
 
 @media (max-width: 720px){
-    .left-side, .right-side{
-        height:95vh;
+    .left-side{
+        height:20vh;
+    }
+    .right-side{
+        height: 80vh;
     }
 }
 
